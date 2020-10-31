@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Breakout Game</title>
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">  -->
+    
+    <style>
+        *{
+            font-family: "Germania One";
+        }
+        #sound{
+            width: 30px;
+            height : 30px;
+            cursor: pointer;
+            position: absolute;
+            top : 465px;
+            left : 420px;
+        }
+        #gameover{
+            position: absolute;
+            width : 400px;
+            height: 500px;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        #youwon{
+            width: 400px;
+            position: absolute;
+            top : 100px;
+            left : 400px;
+            display: none;
+        }
+        #youlose{
+            width:400px;
+            position: absolute;
+            top: 100px;
+            left : 400px;
+            display: none;
+        }
+        #restart{
+            position: absolute;
+            top: 310px;
+            left : 400px;
+            cursor: pointer;
+            font-size: 1.25em;
+            color : #FFF;
+        }
+        canvas{
+            margin-left:400px;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="sound">
+        <!-- <img src="img/SOUND_ON.png" alt="" id="sound"> -->
+    </div>
+    
+    <div id="gameover">
+        <img src="img/youwon.gif" alt="" id="youwon">
+        <img src="img/gameover.gif" alt="" id="youlose">
+        <div id="restart"><button>Play Again!</button></div>
+    </div>
+   
+    <canvas id="breakout" width="400" height="500"></canvas>
+    
+    <script src="components.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
